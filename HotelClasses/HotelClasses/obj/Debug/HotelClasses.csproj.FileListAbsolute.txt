@@ -1,0 +1,6 @@
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelClasses\HotelClasses\bin\Debug\HotelClasses.dll
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelClasses\HotelClasses\bin\Debug\HotelClasses.pdb
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelClasses\HotelClasses\obj\Debug\HotelClasses.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelClasses\HotelClasses\obj\Debug\HotelClasses.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelClasses\HotelClasses\obj\Debug\HotelClasses.dll
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelClasses\HotelClasses\obj\Debug\HotelClasses.pdb

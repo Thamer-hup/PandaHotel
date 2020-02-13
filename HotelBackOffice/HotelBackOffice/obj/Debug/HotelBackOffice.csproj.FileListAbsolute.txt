@@ -1,0 +1,9 @@
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\bin\Debug\HotelBackOffice.exe.config
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\bin\Debug\HotelBackOffice.exe
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\bin\Debug\HotelBackOffice.pdb
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.Properties.Resources.resources
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csproj.GenerateResource.cache
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.exe
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.pdb
