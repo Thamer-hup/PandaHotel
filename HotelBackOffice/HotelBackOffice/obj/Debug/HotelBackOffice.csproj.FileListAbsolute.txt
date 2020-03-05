@@ -7,3 +7,12 @@ C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\Ho
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.exe
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotel\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.pdb
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\bin\Debug\HotelBackOffice.exe.config
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\bin\Debug\HotelBackOffice.exe
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\bin\Debug\HotelBackOffice.pdb
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csprojAssemblyReference.cache
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.Properties.Resources.resources
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csproj.GenerateResource.cache
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.csproj.CoreCompileInputs.cache
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.exe
+H:\Documents\Project management-Panda\HotelBackOffice\HotelBackOffice\obj\Debug\HotelBackOffice.pdb
