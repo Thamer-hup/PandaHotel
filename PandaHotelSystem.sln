@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HotelFrontOffice", "HotelFrontOffice\HotelFrontOffice\", "{6B64FC05-4B49-44EE-A49F-EFF0EDD3B9D4}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{bbb237ec-a59a-48c9-81bd-927a46ade4e2}|HotelClasses.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56100"
 		Debug.AspNetCompiler.PhysicalPath = "HotelFrontOffice\HotelFrontOffice\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56100\"

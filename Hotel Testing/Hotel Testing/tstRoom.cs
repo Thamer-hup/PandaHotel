@@ -8,89 +8,88 @@ using System.Threading.Tasks;
 
 namespace Hotel_Testing
 {
-    [TestClass]
-    class tstStaff
+    class tstRoom
     {
         [TestMethod]
         public void InstanceOK()
         {
-            clsStaff AStaff = new clsStaff();
+            clsRoom ARoom = new clsRoom();
 
-            Assert.IsNotNull(AStaff);
+            Assert.IsNotNull(ARoom);
         }
         [TestMethod]
-        public void StaffIdPropertyOK()
+        public void RoomIdPropertyOK()
         {
             //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
+            clsRoom ARoom = new clsRoom();
             //create some test data to assign to the property
             Int32 TestData = 100;
             //assign the data to the property
-            AStaff.StaffId = TestData;
+            ARoom.RoomId = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AStaff.StaffId, TestData);
+            Assert.AreEqual(ARoom.RoomId, TestData);
         }
         [TestMethod]
-        public void StaffNamePropertyOK()
+        public void RoomNumberPropertyOK()
         {
             //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
+            clsRoom ARoom = new clsRoom();
             //create some test data to assign to the property
-            String TestData = "Thamer";
+            String TestData = "RM001";
             //assign the data to the property
-            AStaff.StaffName = TestData;
+            ARoom.RoomNumber = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AStaff.StaffName, TestData);
+            Assert.AreEqual(ARoom.RoomNumber, TestData);
         }
         [TestMethod]
-        public void StaffPhonePropertyOK()
+        public void FloorNoPropertyOK()
         {
             //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
+            clsRoom ARoom = new clsRoom();
             //create some test data to assign to the property
-            String TestData = "07899999999";
+            Int32 TestData = 4;
             //assign the data to the property
-            AStaff.StaffPhone = TestData;
+            ARoom.FloorNo = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AStaff.StaffPhone, TestData);
+            Assert.AreEqual(ARoom.FloorNo, TestData);
         }
         [TestMethod]
-        public void EmailPropertyOK()
+        public void RoomTypePropertyOK()
         {
             //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
+            clsRoom ARoom = new clsRoom();
             //create some test data to assign to the property
-            String TestData = "th@thamer.com";
+            String TestData = "Deluxe";
             //assign the data to the property
-            AStaff.Email = TestData;
+            ARoom.RoomType = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AStaff.Email, TestData);
+            Assert.AreEqual(ARoom.RoomType, TestData);
         }
 
         [TestMethod]
-        public void ActivePropertyOK()
+        public void DailyChargePropertyOK()
         {
             //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
+            clsRoom ARoom = new clsRoom();
+            //create some test data to assign to the property
+            Double TestData = 99.99;
+            //assign the data to the property
+            ARoom.DailyCharge = TestData;
+            //test to see that the two values are the same
+            Assert.AreEqual(ARoom.DailyCharge, TestData);
+        }
+
+        [TestMethod]
+        public void AvailableForBookingPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsRoom ARoom = new clsRoom();
             //create some test data to assign to the property
             Boolean TestData = true;
             //assign the data to the property
-            AStaff.Active = TestData;
+            ARoom.AvailableForBooking = TestData;
             //test to see that the two values are the same
-            Assert.AreEqual(AStaff.Active, TestData);
-        }
-
-        [TestMethod]
-        public void StaffRolePropertyOK()
-        {
-            //create an instance of the class we want to create
-            clsStaff AStaff = new clsStaff();
-            //create some test data to assign to the property
-            String TestData = "admin";
-            //assign the data to the property
-            AStaff.StaffRole = TestData;
-            //test to see that the two values are the same
-            Assert.AreEqual(AStaff.StaffRole, TestData);
+            Assert.AreEqual(ARoom.AvailableForBooking, TestData);
         }
 
     }
