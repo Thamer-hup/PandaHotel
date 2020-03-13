@@ -9,5 +9,9 @@
         public bool Active { get; set; }
         public string StaffRole { get; set; }
 
+        public bool Find(int StaffName)
+        {
+            return true; 
+        }
     }
 }

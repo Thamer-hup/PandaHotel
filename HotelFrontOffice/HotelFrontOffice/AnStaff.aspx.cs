@@ -22,6 +22,6 @@ public partial class AnStaff : System.Web.UI.Page
         AnStaff.StaffRole = ddlStaffRole.SelectedValue;
         AnStaff.Active = chkActive.Checked;
         Response.Redirect("StaffViewer.aspx");
-           
+    }   
 
 }

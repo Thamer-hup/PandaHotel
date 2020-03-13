@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Hotel_Testing
 {
     [TestClass]
-    class tstStaff
+    public class tstStaff
     {
         [TestMethod]
         public void InstanceOK()

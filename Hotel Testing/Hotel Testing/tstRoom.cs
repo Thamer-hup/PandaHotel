@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Hotel_Testing
 {
-    class tstRoom
+    [TestClass]
+    public class tstRoom
     {
         [TestMethod]
         public void InstanceOK()

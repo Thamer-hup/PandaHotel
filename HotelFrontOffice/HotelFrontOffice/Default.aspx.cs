@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,19 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if(IsPostBack == false)
+        {
+            DisplayStaff(); 
+        }
 
     }
-}
+    public void DisplayStaff()
+    {
+        clsStaffCollection AllStaff = new clsStaffCollection();
+        lstStaff.DataSource = AllStaff.StaffList;
+        lstStaff.DataValueField = "StaffId";
+        lstStaff.DataTextField = "StaffName";
+        lstStaff.DataBind(); 
+
+    }
+} 
