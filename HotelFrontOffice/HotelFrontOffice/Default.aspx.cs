@@ -25,4 +25,41 @@ public partial class _Default : System.Web.UI.Page
         lstStaff.DataBind(); 
 
     }
+
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+        Session["StaffId"] = -1;
+        Response.Redirect("AnStaff.aspx"); 
+    }
+
+    protected void btnRemove_Click(object sender, EventArgs e)
+    {
+        Int32 StaffId;
+        if(lstStaff.SelectedIndex != -1)
+        {
+            StaffId = Convert.ToInt32(lstStaff.SelectedValue);
+            Session["StaffId"] = StaffId;
+            Response.Redirect("Delete"); 
+        }
+        else
+        {
+            lblError.Text = "Please select a record to delete"; 
+        }
+    }
+
+    protected void btnEdit_Click(object sender, EventArgs e)
+    {
+        Int32 StaffId;
+        if (lstStaff.SelectedIndex != -1)
+        {
+            StaffId = Convert.ToInt32(lstStaff.SelectedValue);
+            Session["StaffId"] = StaffId;
+            Response.Redirect("AnAddress.aspx");
+        }
+        else
+        {
+            lblError.Text = "Please select a record to delete";
+        }
+
+    }
 } 

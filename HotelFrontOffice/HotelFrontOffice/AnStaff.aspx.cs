@@ -15,13 +15,26 @@ public partial class AnStaff : System.Web.UI.Page
 
     protected void btnOK_Click(object sender, EventArgs e)
     {
-        clsStaff AnStaff = new clsStaff();
-        AnStaff.StaffName = txtStaffName.Text;
-        AnStaff.StaffPhone = txtPhone.Text;
-        AnStaff.Email = txtEmail.Text;
-        AnStaff.StaffRole = ddlStaffRole.SelectedValue;
-        AnStaff.Active = chkActive.Checked;
-        Response.Redirect("StaffViewer.aspx");
-    }   
+        Add(); 
+        Response.Redirect("Default.aspx");
+    }  
+    void Add()
+    {
+        HotelClasses.clsStaffCollection AllStaff = new clsStaffCollection();
+        String Error = AllStaff.ThisStaff.Valid(txtStaffName.Text, txtPhone.Text, txtEmail.Text, chkActive.Checked, ddlStaffRole.SelectedValue); 
+        if(Error == "")
+        {
+            AllStaff.ThisStaff.StaffName = txtStaffName.Text;
+            AllStaff.ThisStaff.StaffPhone = txtPhone.Text;
+            AllStaff.ThisStaff.Email = txtEmail.Text;
+            AllStaff.ThisStaff.Active = chkActive.Checked;
+            AllStaff.ThisStaff.StaffRole = ddlStaffRole.SelectedValue;
+            AllStaff.Add(); 
+        }
+        else
+        {
+            lblError.Text = "There were problem with the data" + Error; 
+        }
+    }
 
 }

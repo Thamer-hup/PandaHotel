@@ -78,5 +78,103 @@ namespace Hotel_Testing
             //test to see that the two values are the same
             Assert.AreEqual(AllStaff.Count, 2);
         }
+
+        [TestMethod]
+        public void AddMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsStaffCollection AllStaff = new clsStaffCollection();
+            //in this case the data need to be a list of objects
+            List<clsStaff> TestList = new List<clsStaff>();
+            //var to store primary key
+            Int32 Primarykey = 0; 
+            //add item to the list 
+            clsStaff TestItem = new clsStaff();
+            //add an item to the list
+            TestItem.StaffName = "Thamer";
+            TestItem.Email = "th@thamer.com";
+            TestItem.StaffPhone = "07777789687";
+            TestItem.StaffRole = "admin";
+            //set this staff to the test item
+            AllStaff.ThisStaff = TestItem;
+            //add the record
+            Primarykey = AllStaff.Add();
+            //set the primary key of the test data 
+            TestItem.StaffId = Primarykey;
+            // find the record
+            AllStaff.ThisStaff.Find(Primarykey); 
+            //test to see that the two values are the same
+            Assert.AreEqual(AllStaff.ThisStaff, TestItem);
+
+        }
+
+        [TestMethod]
+        public void DeleteMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsStaffCollection AllStaff = new clsStaffCollection();
+            //var to store primary key
+            Int32 Primarykey = 0;
+            //add item to the list 
+            clsStaff TestItem = new clsStaff();
+            //add an item to the list
+            TestItem.StaffName = "Thamer";
+            TestItem.Email = "th@thamer.com";
+            TestItem.StaffPhone = "07777789687";
+            TestItem.StaffRole = "admin";
+            TestItem.Active = true; 
+            //set this staff to the test item
+            AllStaff.ThisStaff = TestItem;
+            //add the record
+            Primarykey = AllStaff.Add();
+            //set the primary key of the test data 
+            TestItem.StaffId = Primarykey;
+            // find the record
+            AllStaff.ThisStaff.Find(Primarykey);
+            //
+            AllStaff.Delete(); 
+            // now find the record 
+            Boolean Found = AllStaff.ThisStaff.Find(Primarykey);
+            //test to see that the two values are the same
+            Assert.IsFalse(Found); 
+
+        }
+
+        [TestMethod]
+        public void UpdateMethodOK()
+        {
+            //create an instance of the class we want to create
+            clsStaffCollection AllStaff = new clsStaffCollection();
+            //add item to the list 
+            clsStaff TestItem = new clsStaff();
+            //var to store primary key
+            Int32 Primarykey = 0;
+            //add an item to the list
+            TestItem.StaffName = "Thamer";
+            TestItem.Email = "th@thamer.com";
+            TestItem.Active = true;
+            TestItem.StaffPhone = "07777789687";
+            TestItem.StaffRole = "admin";
+            //set this staff to the test item
+            AllStaff.ThisStaff = TestItem;
+            //add the record
+            Primarykey = AllStaff.Add();
+            //set the primary key of the test data 
+            TestItem.StaffId = Primarykey;
+            //modify the test data 
+            TestItem.StaffName = "ThamerU";
+            TestItem.Email = "Uth@thamer.com";
+            TestItem.Active = false;
+            TestItem.StaffPhone = "07777789687";
+            TestItem.StaffRole = "staff";
+            AllStaff.ThisStaff = TestItem;
+            // update the record
+            AllStaff.Update(); 
+            // find the record
+            AllStaff.ThisStaff.Find(Primarykey);
+            //test to see that the two values are the same
+            Assert.AreEqual(AllStaff.ThisStaff, TestItem);
+
+        }
     }
 }

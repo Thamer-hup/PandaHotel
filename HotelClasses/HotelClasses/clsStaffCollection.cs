@@ -17,6 +17,20 @@ namespace HotelClasses
                 mStaffList = value; 
             }
         }
+
+        public clsStaff mThisStaff = new clsStaff(); 
+
+        public clsStaff ThisStaff
+        {
+            get
+            {
+                return mThisStaff; 
+            }
+            set
+            {
+                mThisStaff = value; 
+            }
+        }
         public int Count
         {
             get
@@ -52,6 +66,39 @@ namespace HotelClasses
 
 
            
+        }
+
+        public int Add()
+        {
+            clsDataConnection db = new clsDataConnection();
+            db.AddParameter("StaffName", mThisStaff.StaffName);
+            db.AddParameter("StaffPhone", mThisStaff.StaffPhone);
+            db.AddParameter("StaffEmail", mThisStaff.Email);
+            db.AddParameter("Active", mThisStaff.Active);
+            db.AddParameter("StaffRole", mThisStaff.StaffRole);
+            return db.Execute("sproc_tblStaff_Insert"); 
+            //mThisStaff.StaffId = 123;
+            //return mThisStaff.StaffId; 
+        }
+
+        public void Delete()
+        {
+            clsDataConnection db = new clsDataConnection();
+            db.AddParameter("StaffId", mThisStaff.StaffId);
+            
+            db.Execute("sproc_tblStaff_Delete");
+        }
+
+        public void Update()
+        {
+            clsDataConnection db = new clsDataConnection();
+            db.AddParameter("StaffId", mThisStaff.StaffId);
+            db.AddParameter("StaffName", mThisStaff.StaffName);
+            db.AddParameter("StaffPhone", mThisStaff.StaffPhone);
+            db.AddParameter("StaffEmail", mThisStaff.Email);
+            db.AddParameter("Active", mThisStaff.Active);
+            db.AddParameter("StaffRole", mThisStaff.StaffRole);
+            db.Execute("sproc_tblStaff_Update");
         }
     }
 }

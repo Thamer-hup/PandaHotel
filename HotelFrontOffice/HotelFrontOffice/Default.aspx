@@ -64,14 +64,16 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">
-                        <asp:Button ID="btnAdd" runat="server" Text="Add" />
-                        <asp:Button ID="btnEdit" runat="server" Text="Edit" />
-                        <asp:Button ID="btnRemove" runat="server" Text="Remove" />
+                        <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />
+                        <asp:Button ID="btnEdit" runat="server" Text="Edit" OnClick="btnEdit_Click" />
+                        <asp:Button ID="btnRemove" runat="server" Text="Remove" OnClick="btnRemove_Click" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Label ID="lblError" runat="server"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>

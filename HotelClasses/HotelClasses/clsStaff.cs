@@ -1,4 +1,6 @@
-﻿namespace HotelClasses
+﻿using System;
+
+namespace HotelClasses
 {
     public class clsStaff
     {
@@ -12,6 +14,11 @@
         public bool Find(int StaffName)
         {
             return true; 
+        }
+
+        public string Valid(string text1, string text2, string text3, bool @checked, string selectedValue)
+        {
+            return "";
         }
     }
 }
