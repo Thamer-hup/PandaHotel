@@ -1,0 +1,6 @@
+The database could not be published to github so i had to zip and publish it that way. 
+The database is placed in project HotelFrontOffice an zip file is called app_data. 
+so for things to work we need app_data directory with panda.mdf file. 
+
+The Testing code also look at the same location. 
+I adjusted code in GetFileName is Dataconnection class to do that. 
