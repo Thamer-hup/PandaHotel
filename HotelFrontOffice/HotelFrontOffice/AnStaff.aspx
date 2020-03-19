@@ -47,8 +47,8 @@
                     <td class="auto-style2">Staff Role</td>
                     <td>
                         <asp:DropDownList ID="ddlStaffRole" runat="server">
-                            <asp:ListItem Selected="True">Staff</asp:ListItem>
-                            <asp:ListItem Value="admin">Admin</asp:ListItem>
+                            <asp:ListItem Value="1" Selected="True">Staff</asp:ListItem>
+                            <asp:ListItem Value="2">Admin</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                 </tr>

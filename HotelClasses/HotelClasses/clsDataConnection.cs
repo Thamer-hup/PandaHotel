@@ -43,11 +43,14 @@ public class clsDataConnection
         //build up the connection string for the sql server database Visual Studio 2010
         //connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;User Instance=True";
         //build up the connection string for the sql server database Visual Studio 2012
-        //connectionString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;Connect Timeout=30";
-        //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + GetDBName() + "\";Integrated Security=True;Connect Timeout=30";
-        connectionString = "Server=tcp:pandah.database.windows.net,1433;Initial Catalog=ProjMng;Persist Security Info=False;User ID=panda;Password=Hotel1234!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-            //"Server=pandah.database.windows.net,1433;Initial Catalog=ProjMng;PersistSecurityInfo=False;User ID=panda;Password=Hotel1234!;Connect Timeout=30;";
-        //connectionString = connectionString.Replace("###", SomePath);
+       // Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = "C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelFrontOffice\HotelFrontOffice\app_data\Panda.mdf"; Integrated Security = True
+        connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;Connect Timeout=30";
+        //System.AppDomain.CurrentDomain.BaseDirectory = "C:\\Users\\Dell\\Desktop\\SecondYear\\projact manegment\\PandaHotelFP\\HotelFrontOffice\\HotelFrontOffice\\"
+      //  Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = "C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\Panda.mdf"; Integrated Security = True
+      //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + GetDBName() + "\";Integrated Security=True;Connect Timeout=30";
+      //connectionString = "Server=tcp:pandah.database.windows.net,1433;Initial Catalog=ProjMng;Persist Security Info=False;User ID=panda;Password=Hotel1234!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+      //"Server=pandah.database.windows.net,1433;Initial Catalog=ProjMng;PersistSecurityInfo=False;User ID=panda;Password=Hotel1234!;Connect Timeout=30;";
+      //connectionString = connectionString.Replace("###", SomePath);
         return connectionString;
     }
 
@@ -66,6 +69,11 @@ public class clsDataConnection
         List<string> DBNames = new List<string>();
         //get the folder for the project
         string BaseDir = TrimPath(System.AppDomain.CurrentDomain.BaseDirectory);
+        if (BaseDir.Contains("Testing"))
+        {
+            BaseDir = BaseDir.Replace("Hotel Testing", "HotelFrontOffice");
+            BaseDir = BaseDir.Replace("\\bin", "");
+        }
         do
         {
             //get the list of files in the folder

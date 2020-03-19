@@ -15,3 +15,5 @@ C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\Hot
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\obj\Debug\HotelClasses.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\obj\Debug\HotelClasses.dll
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\obj\Debug\HotelClasses.pdb
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\bin\Debug\Panda.mdf
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\bin\Debug\Panda_log.ldf

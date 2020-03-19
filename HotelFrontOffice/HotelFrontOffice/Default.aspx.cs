@@ -39,7 +39,7 @@ public partial class _Default : System.Web.UI.Page
         {
             StaffId = Convert.ToInt32(lstStaff.SelectedValue);
             Session["StaffId"] = StaffId;
-            Response.Redirect("Delete"); 
+            Response.Redirect("Delete.aspx"); 
         }
         else
         {
@@ -54,12 +54,27 @@ public partial class _Default : System.Web.UI.Page
         {
             StaffId = Convert.ToInt32(lstStaff.SelectedValue);
             Session["StaffId"] = StaffId;
-            Response.Redirect("AnAddress.aspx");
+            Response.Redirect("AnStaff.aspx");
         }
         else
         {
             lblError.Text = "Please select a record to delete";
         }
 
+    }
+
+    protected void btnApply_Click(object sender, EventArgs e)
+    {
+        clsStaffCollection AllStaff = new clsStaffCollection();
+        AllStaff.ReportByStaffName(txtStaffName.Text); 
+        lstStaff.DataSource = AllStaff.StaffList;
+        lstStaff.DataValueField = "StaffId";
+        lstStaff.DataTextField = "StaffName";
+        lstStaff.DataBind();
+    }
+
+    protected void btnDisplayAll_Click(object sender, EventArgs e)
+    {
+        DisplayStaff();
     }
 } 

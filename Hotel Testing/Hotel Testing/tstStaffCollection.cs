@@ -30,7 +30,7 @@ namespace Hotel_Testing
             TestItem.StaffName = "Thamer";
             TestItem.Email = "th@thamer.com";
             TestItem.StaffPhone = "07777789687";
-            TestItem.StaffRole = "admin";
+            TestItem.StaffRoleId = 1;
             TestList.Add(TestItem);
             AllStaff.StaffList = TestList; 
             //test to see that the two values are the same
@@ -62,7 +62,7 @@ namespace Hotel_Testing
             TestItem.StaffName = "Thamer";
             TestItem.Email = "th@thamer.com";
             TestItem.StaffPhone = "07777789687";
-            TestItem.StaffRole = "admin";
+            TestItem.StaffRoleId = 1;
             TestList.Add(TestItem);
             AllStaff.StaffList = TestList;
 
@@ -94,7 +94,7 @@ namespace Hotel_Testing
             TestItem.StaffName = "Thamer";
             TestItem.Email = "th@thamer.com";
             TestItem.StaffPhone = "07777789687";
-            TestItem.StaffRole = "admin";
+            TestItem.StaffRoleId = 1;
             //set this staff to the test item
             AllStaff.ThisStaff = TestItem;
             //add the record
@@ -121,7 +121,7 @@ namespace Hotel_Testing
             TestItem.StaffName = "Thamer";
             TestItem.Email = "th@thamer.com";
             TestItem.StaffPhone = "07777789687";
-            TestItem.StaffRole = "admin";
+            TestItem.StaffRoleId = 1;
             TestItem.Active = true; 
             //set this staff to the test item
             AllStaff.ThisStaff = TestItem;
@@ -154,7 +154,7 @@ namespace Hotel_Testing
             TestItem.Email = "th@thamer.com";
             TestItem.Active = true;
             TestItem.StaffPhone = "07777789687";
-            TestItem.StaffRole = "admin";
+            TestItem.StaffRoleId = 1;
             //set this staff to the test item
             AllStaff.ThisStaff = TestItem;
             //add the record
@@ -166,7 +166,7 @@ namespace Hotel_Testing
             TestItem.Email = "Uth@thamer.com";
             TestItem.Active = false;
             TestItem.StaffPhone = "07777789687";
-            TestItem.StaffRole = "staff";
+            TestItem.StaffRoleId = 1;
             AllStaff.ThisStaff = TestItem;
             // update the record
             AllStaff.Update(); 
@@ -175,6 +175,47 @@ namespace Hotel_Testing
             //test to see that the two values are the same
             Assert.AreEqual(AllStaff.ThisStaff, TestItem);
 
+        }
+
+        [TestMethod]
+        public void ReportByStaffNameMethodOK()
+        {
+            clsStaffCollection AllStaff = new clsStaffCollection();
+            clsStaffCollection FilteredStaff = new clsStaffCollection();
+            FilteredStaff.ReportByStaffName("");
+            Assert.AreEqual(AllStaff.Count, FilteredStaff.Count);
+        }
+        [TestMethod]
+        public void ReportByStaffNameNoneFound()
+        {
+            clsStaffCollection FilteredStaff = new clsStaffCollection();
+            FilteredStaff.ReportByStaffName("xxx xxxx");
+            Assert.AreEqual(0, FilteredStaff.Count);
+        }
+        [TestMethod]
+        public void ReportByStaffNameTestDataFound()
+        {
+            clsStaffCollection FilteredStaff = new clsStaffCollection();
+            Boolean OK = true;
+            FilteredStaff.ReportByStaffName("xxx"); 
+            if(FilteredStaff.Count == 2)
+            {
+                if(FilteredStaff.StaffList[0].StaffId !=6)
+                {
+                    OK = false; 
+                }
+                if (FilteredStaff.StaffList[0].StaffId != 7)
+                {
+                    OK = false;
+                }
+
+            }
+            else
+            {
+                OK = false; 
+            }
+
+            Assert.IsTrue(OK);
         }
     }
 }

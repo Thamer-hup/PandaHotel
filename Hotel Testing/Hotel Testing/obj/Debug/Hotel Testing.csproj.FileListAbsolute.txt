@@ -44,3 +44,5 @@ C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\Hotel Testing\Ho
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\Hotel Testing\Hotel Testing\obj\Debug\Hotel Testing.csproj.CopyComplete
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\Hotel Testing\Hotel Testing\obj\Debug\Hotel Testing.dll
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\Hotel Testing\Hotel Testing\obj\Debug\Hotel Testing.pdb
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\Hotel Testing\Hotel Testing\bin\Debug\Panda.mdf
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\Hotel Testing\Hotel Testing\bin\Debug\Panda_log.ldf

@@ -53,8 +53,8 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">
-                        <asp:Button ID="btnApply" runat="server" Text="Apply" />
-                        <asp:Button ID="btnDisplayAll" runat="server" Text="DisplayAll" />
+                        <asp:Button ID="btnApply" runat="server" Text="Apply" OnClick="btnApply_Click" />
+                        <asp:Button ID="btnDisplayAll" runat="server" Text="DisplayAll" OnClick="btnDisplayAll_Click" />
                     </td>
                 </tr>
                 <tr>
