@@ -77,4 +77,9 @@ public partial class _Default : System.Web.UI.Page
     {
         DisplayStaff();
     }
+
+    protected void lbnRoom_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("DefaultRoom.aspx");
+    }
 } 

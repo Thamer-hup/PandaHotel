@@ -17,3 +17,4 @@ C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\Hot
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\obj\Debug\HotelClasses.pdb
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\bin\Debug\Panda.mdf
 C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\bin\Debug\Panda_log.ldf
+C:\Users\Dell\Desktop\SecondYear\projact manegment\PandaHotelFP\HotelClasses\HotelClasses\obj\Debug\HotelClasses.csprojAssemblyReference.cache

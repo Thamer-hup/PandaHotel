@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DefaultRoom.aspx.cs" Inherits="DefaultRoom" %>
 
 <!DOCTYPE html>
 
@@ -28,24 +28,24 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style4">---------------
-                        <asp:LinkButton ID="lbnRoom" runat="server" OnClick="lbnRoom_Click">Room Home </asp:LinkButton>
+                    <td class="auto-style4">Rooms ---------------
+                        <asp:LinkButton ID="lbnStaff" runat="server" OnClick="lbnStaff_Click">Staff Home </asp:LinkButton>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">
-                        <asp:ListBox ID="lstStaff" runat="server" Height="125px" Width="559px"></asp:ListBox>
+                        <asp:ListBox ID="lstRoom" runat="server" Height="125px" Width="559px"></asp:ListBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style4">Please enter a staff name</td>
+                    <td class="auto-style4">Please enter a Room number to search</td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="txtStaffName" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtRoomNumber" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
